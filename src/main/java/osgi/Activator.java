@@ -51,8 +51,8 @@ public class Activator implements BundleActivator
     {
       String user = logonData.getUser();
       if ("IAMNOTAPRO".equals(user))
-        return LicenseCheckResultFactory.licenseIsAvailable();
-      return LicenseCheckResultFactory.licenseIsNotAvailable("PRO license is not available for " + user );
+        return LicenseCheckResultFactory.licenseIsNotAvailable("PRO license is not available for " + user );
+      return LicenseCheckResultFactory.licenseIsAvailable();
     }
   }
 
